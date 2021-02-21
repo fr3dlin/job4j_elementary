@@ -35,4 +35,37 @@ public class MinTest {
                 is(2)
         );
     }
+
+    @Test
+    public void whenDFirstMin() {
+        assertThat(
+                Min.findMin(
+                        new int[] {-1, 0, 5, 10},
+                        1, 3
+                ),
+                is(0)
+        );
+    }
+
+    @Test
+    public void whenDLastMin() {
+        assertThat(
+                Min.findMin(
+                        new int[] {10, 5, 3, 1},
+                        1, 3
+                ),
+                is(1)
+        );
+    }
+
+    @Test
+    public void whenDMiddleMin() {
+        assertThat(
+                Min.findMin(
+                        new int[] {10, 2, 5, 1},
+                        0, 2
+                ),
+                is(2)
+        );
+    }
 }
